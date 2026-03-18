@@ -1,6 +1,6 @@
 # Hi, I'm Jacob 👋🍊
 
-I'm a Data Analytics student at Syracuse University's iSchool, a Division I hockey player, and a firm believer that every sports decision should be backed by data (yes, even line changes).
+I'm a Data Analytics student at Syracuse University's iSchool, a ACHA DI hockey player, and a firm believer that every sports decision should be backed by data (yes, even line changes).
 
 I build models, dashboards, and analytics tools focused on sports performance, betting markets, and player evaluation. If there's a dataset and a sports question, I'm probably already working on it.
 
@@ -28,7 +28,7 @@ I build models, dashboards, and analytics tools focused on sports performance, b
 
 ## A Few Facts 🍊
 
-- 🏒 D1 hockey player at Syracuse — I analyze the game as much as I play it
+- 🏒 ACHA D1 hockey player at Syracuse — I analyze the game as much as I play it
 - 📍 From Luverne, Minnesota — yes it's a real place
 - 🎯 Actively looking for sports analytics, sports betting, and data roles in Boston
 - ☁️ My code lives on OneDrive which my teammates find very funny
