@@ -1,40 +1,42 @@
-# Hi, I'm Jacob 👋🍊
+# Jacob VonTersch 🍊
 
-I'm a Data Analytics student at Syracuse University's iSchool, a Division I hockey player, and a firm believer that every sports decision should be backed by data (yes, even line changes).
+Data Analytics at Syracuse University's iSchool. I build predictive models, dashboards, and data tools, mostly for sports, betting markets, and player evaluation. I'm also deep into applied AI, from prompt engineering to running local LLMs.
 
-I build models, dashboards, and analytics tools focused on sports performance, betting markets, and player evaluation. If there's a dataset and a sports question, I'm probably already working on it.
+## What I'm working on
 
-## What I'm Building 🏗️
+- A proprietary MLB home run model for betting markets: 1.58x lift over baseline across 112K+ Statcast records (private)
+- Hockey analytics for edges on and off the ice
+- NFL situational efficiency tools built on EPA to find roster value
+- Cross-market commodity forecasting with XGBoost and a fully offline local LLM
+- Dashboards that put data in front of coaches, front offices, and operators
 
-- 🏒 Leveraging hockey analytics to find edges on and off the ice
-- 🎰 A proprietary MLB home run prediction model targeting sports betting markets *(not open source — for obvious reasons)*
-- 🏈 NFL situational efficiency tools using EPA to find roster improvement opportunities
-- 🍊 Sports dashboards that make data accessible to coaches and front offices
-
-## Featured Projects
+## Featured projects
 
 | Project | Description | Tech |
-|--------|-------------|------|
-| [NFL EPA Leverage Report](https://github.com/Tersch23/NFL-Leverage-Report) | Identifies roster improvement opportunities by comparing situational EPA vs. league average | Python, nflverse, Matplotlib |
-| [NCAA Basketball Dashboard](https://github.com/Tersch23/NCAA-Basketball-Dashboard) | Interactive dashboard for shot charts, team stats, and conference standings across the Big 4 | Python, Streamlit, Plotly |
-| [Orange Hoops Challenge](https://github.com/Tersch23/Orange_Hoops_Challenge) | ML model predicting clutch shot success — 85% accuracy across 211k shots | Python, scikit-learn, R |
+|---|---|---|
+| [Ag Market Predictor](https://github.com/Tersch23/ag-market-predictor) | Cross-market commodity forecasting dashboard with an XGBoost engine and offline local-LLM market briefings | Python, XGBoost, Streamlit, Llama.cpp |
+| [MLB WAR-162 Forecast](https://github.com/Tersch23/mlb-war162-forecast) | Next-season WAR/162 from prior-season data, using a leakage-controlled Random Forest on a large player-season set | PySpark, MLlib |
+| NFL EPA Leverage Report | Roster-value opportunities from situational EPA vs. league average | Python, nflverse, Matplotlib |
+| [2025 Playoffs Statcast Viz](https://github.com/Tersch23/mlb-2025-playoffs-statcast) | What separates elite postseason hitters, by quality of contact | R, ggplot2 |
+| NCAA Basketball Dashboard | Shot charts, team stats, and standings across the Big 4 | Python, Streamlit, Plotly |
+| Orange Hoops Challenge | Clutch-shot success model, 85% accuracy across 211K shots | Python, scikit-learn, R |
 
-## Skills 🛠️
+## Stack
 
-**Languages:** Python, R, SQL, PySpark  
-**Tools:** Streamlit, Plotly, Matplotlib, Power BI, Tableau, Excel  
-**Libraries:** scikit-learn, Pandas, NumPy, nflverse  
-**AI Tools:** ChatGPT, Claude, GitHub Copilot, Gemini  
-**Concepts:** Machine learning, EPA/WPA metrics, data pipelines, feature engineering, prompt engineering
+- Languages: Python, R, SQL, PySpark
+- Tools: Streamlit, Plotly, Matplotlib, Power BI, Excel
+- Libraries: scikit-learn, XGBoost, Pandas, NumPy, nflverse, ggplot2
+- AI: Claude, ChatGPT, Copilot, Gemini, Glean, and local LLMs (Llama 3 via Llama.cpp)
+- Concepts: ML, feature engineering, time-series cross-validation, data pipelines, EPA/WPA, prompt engineering
 
-## A Few Facts 🍊
+## A bit more
 
-- 🏒 ACHA D1 hockey player at Syracuse — I analyze the game as much as I play it
-- 📍 From Luverne, Minnesota — yes it's a real place
-- 🎯 Actively looking for sports analytics, sports betting, and data roles in Boston
-- 🤖 I use AI tools daily to accelerate development and sharpen my analysis
-- ☁️ My code lives on OneDrive which my teammates find very funny
+- Syracuse Men's Hockey, where I study the game as much as I play it
+- From Luverne, Minnesota
+- Graduated May 2026, open to data, AI, and go-to-market roles in Boston, Chicago, NYC, DC, or KC
+- AI tools are part of my daily workflow
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jacob%20VonTersch-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jacobvontersch)
+- LinkedIn: https://linkedin.com/in/jacobvontersch
+- Email: jvonters@syr.edu
