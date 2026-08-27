@@ -1,6 +1,6 @@
 # Jacob VonTersch 🍊
 
-### Commodity Market Data Tools | Sports Betting Models | Building the Tech Team at Pro Ag
+### Commodity Market Data Tools | Sports Betting Models | Syracuse Hockey Alum 🍊
 
 Luverne, Minnesota -> Syracuse -> Professional Ag Marketing.
 
