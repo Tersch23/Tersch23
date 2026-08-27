@@ -1,60 +1,68 @@
 # Jacob VonTersch 🍊
 
-Data and product at **Professional Ag Marketing**. I build the pipelines, models, and dashboards behind commodity marketing decisions, mostly hogs and grain, where the output is somebody's actual position.
+### Athlete turned analyst. I build models for the things I can't stop thinking about.
 
-Syracuse iSchool grad, Syracuse Men's Hockey, Luverne MN.
-
----
-
-## What I'm building
-
-**One data library instead of fifteen spreadsheets.** Pro Ag ran on hand-updated Excel files: one person, one workbook, one commodity, refreshed by hand every week. We replaced that with a real platform. Roughly 20 ingest connectors pull USDA (FAS, AMS/MARS, NASS, PSD), EIA, CME, and Barchart into a single Postgres schema, and a Next.js app renders it live. Crush margins, balance sheets, export commitments, harvest and production, cold storage, cutouts, basis, feeder cattle. Some series backfilled 26 years deep.
-
-**The point isn't the charts, it's what becomes visible.** When every commodity lives in its own workbook, nobody can ask a question that crosses two of them. Once it's all in one schema with consistent dates and units, questions that used to be a two-day research project become a page you open. That's the whole thesis: bring everyone's data together, then see the things you couldn't see.
-
-**Verify against the real report, every time.** Every connector gets checked figure-by-figure against the actual USDA release or the legacy spreadsheet before it ships. That habit has caught real bugs on every source where it got skipped: marketing-year boundary errors, silent release substitutions, a government-shutdown gap masquerading as clean data.
-
-**Fill in what the public data doesn't give you.** The official CME Lean Hog index posts about two days late, so the basis chart was always stale at the tip. I reverse-engineered the index formula from USDA's daily mandatory price reports and reconstructed a provisional value for the missing days. **Mean absolute deviation of $0.0025 against the real index across 95 days.** Never stale again.
-
-**Building the team.** Writing the job description, running the hiring process, and setting the conventions we build on: STATUS-first repos, branch and PR, docs that ship with the change instead of after it.
-
-**Next up.** A forward-looking, packer-grid-aware marketing decision layer for hog producers, which is the piece nobody in that market actually ships. And a contract-position system replacing a twenty-year-old Access database for a grain operation.
-
-Most of this is private. The ideas backlog is considerably longer than my available weekends.
+Luverne, Minnesota to Syracuse to Professional Ag Marketing. Applied Data Analytics out of the Syracuse iSchool, 69 games on the blue line for the Orange, and a habit of taking whatever I'm obsessed with and turning it into a system that actually runs.
 
 ---
 
-## The home run model 🔒
+## The path
 
-Private repo, private edge. The numbers are fair game.
+I grew up in Luverne playing football and hockey, wearing 23 on defense. Hockey is what got me to Syracuse and what taught me most of what I know about work: you don't get a good shift because you felt like it, you get it because you put in the reps nobody watched. Three seasons, 69 games, a Senior Day in March 2026, and a degree in Applied Data Analytics two months later.
+
+Sports is also where the analytical side started. Watching a game, you're already doing it: reading matchups, weighing tendencies, deciding what a situation is actually worth. I just kept going until it was code.
+
+Now I'm at Professional Ag Marketing, building technology for commodity markets. Same instinct, higher stakes, real money on the other side of the screen.
+
+---
+
+## Sports betting, and the model I'm proudest of 🔒
+
+I built an MLB home run prediction system. It started as a bet on a single market inefficiency and turned into the most serious thing I've made. It runs every day, in production, and grades itself against ground truth every morning.
+
+The repo is private. The numbers aren't.
 
 | | |
 |---|---|
 | **Architecture** | XGBoost + regularized logistic blend, Platt-calibrated per side |
-| **Features** | 134 engineered, from Statcast 2023-2026 plus weather, park, and market data |
+| **Features** | 134 engineered, from Statcast 2023-2026 plus weather, ballpark, and market data |
 | **Discrimination** | AUC **0.616**, Brier **0.101**, logLoss **0.352** |
-| **Top-tier lift** | **27.1%** hit rate vs. base rate, a **2.13x lift** |
+| **Top-tier lift** | **27.1%** hit rate against base rate, a **2.13x lift** |
 | **Second tier** | **20.4%** hit rate, **1.61x lift** |
 | **Validation** | 124-day forward holdout, **26,270** predictions. No peeking backwards. |
 | **Track record** | **1,400+** scored predictions in a version-stamped ledger |
-| **Delivery** | 13-page research terminal. FastAPI + Next.js 16, Cloudflare R2 data bridge, always on. |
+| **Delivery** | 13-page live research terminal. FastAPI + Next.js, Cloudflare R2 sync, always on. |
 
-The part I'm proudest of isn't the lift, it's the audit. I spent two weeks making my own dashboard report worse numbers about itself. Every figure now carries the model version it came from, stale metrics render an empty state instead of a chart, and a headline ROI stat got demoted the moment I traced that only 7 of its 102 picks came from the current model.
+**Why I'm proud of it isn't the lift.** Anybody can build a model that looks good. I spent two weeks building the thing that tells me when mine doesn't. Every number on that dashboard now carries the model version that produced it. Stale metrics render an empty state instead of a chart. A headline ROI stat got demoted the day I traced it and found only 7 of its 102 picks came from the current model.
 
-A model that flatters you is a model that's lying to you. Mine isn't allowed to.
+That's the discipline the whole thing rests on. A model that flatters you is lying to you, and if I'm going to put money behind a number I need to know exactly where it came from. Betting is what forced that standard, because the market tells you the truth whether you want it or not.
+
+**Where it's going.** It outgrew its origin. It's not one market or one day of the week anymore, it runs daily and the product is bigger than the angle it started from. Next is team and matchup level analysis on real slates, a public-facing transparency feed that posts the hit rate whether it's good or bad, and eventually a broader player-value model that goes past single-game outcomes. The long version is a general sports prediction platform. The short version is that I'm not done.
 
 ---
 
-## Featured public work
+## The team I'm assembling
+
+At Pro Ag I'm building out the technology function from scratch: writing the job description, running the hiring process, and setting the engineering conventions we'll be living with for years.
+
+I'm not hiring people to maintain dashboards. I want builders who want real problems, the unglamorous kind with actual consequences, where the users are operators making decisions with their own money and there's no partial credit for a system that's almost right. Agriculture is full of those problems and short on people pointing modern tooling at them. That's the whole opportunity.
+
+The conventions I'm setting: a STATUS doc that says what's actually true today including what's broken, branch and PR by default, docs that ship with the change instead of after it, and verify against the real source before you trust your own output.
+
+---
+
+## Public work
 
 | Project | What it does | Tech |
 |---|---|---|
 | [Ag Market Predictor](https://github.com/Tersch23/ag-market-predictor) | Cross-market commodity forecasting with an XGBoost engine and offline local-LLM market briefings | Python, XGBoost, Streamlit, Llama.cpp |
 | [MLB WAR-162 Forecast](https://github.com/Tersch23/mlb-war162-forecast) | Next-season WAR/162 from prior-season data, leakage-controlled Random Forest at scale | PySpark, MLlib |
-| [NFL Leverage Report](https://github.com/Tersch23/NFL-Leverage-Report) | Roster-value opportunities from situational EPA vs. league average | Python, nflverse, Matplotlib |
+| [NFL Leverage Report](https://github.com/Tersch23/NFL-Leverage-Report) | Roster-value opportunities from situational EPA against league average | Python, nflverse, Matplotlib |
 | [2025 Playoffs Statcast](https://github.com/Tersch23/mlb-2025-playoffs-statcast) | What separates elite postseason hitters, by quality of contact | R, ggplot2 |
 | [NCAA Hoops Dashboard](https://github.com/Tersch23/NCAA-Basketball-Dashboard) | Shot charts, team comparisons, conference standings across the Big 4 | Python, Streamlit, Plotly |
 | [Orange Hoops Challenge](https://github.com/Tersch23/Orange_Hoops_Challenge) | Clutch-shot success model, 85% accuracy across 211K shots | Python, scikit-learn, R |
+
+Most of what I build now is private. The public stuff is the part I can show.
 
 ---
 
@@ -62,7 +70,7 @@ A model that flatters you is a model that's lying to you. Mine isn't allowed to.
 
 **Languages** Python · TypeScript · SQL · R · PySpark
 
-**Data** Postgres/Neon · Pandas · NumPy · Parquet · REST + scraped report ingestion · USDA, EIA, CME, Barchart, Statcast
+**Data** Postgres/Neon · Pandas · NumPy · Parquet · pipeline and connector work against messy public data
 
 **ML** scikit-learn · XGBoost · calibration and time-series CV · feature engineering · honest backtesting
 
@@ -72,15 +80,17 @@ A model that flatters you is a model that's lying to you. Mine isn't allowed to.
 
 ---
 
-## How I work
+## How I think about it
 
-- **Ship it, then be honest about it.** Every repo has a STATUS.md that says what's actually true today, including what's broken.
+- **Reps beat talent.** Same as hockey. The model got good because it ran every single day and got graded every single morning.
 - **A number without provenance is a rumor.** Version-stamp everything.
-- **Domain first.** The best feature I've ever engineered came from a producer explaining his kill sheet, not from a hyperparameter sweep.
+- **Be your own toughest audit.** If your dashboard has never made you feel worse, it isn't measuring anything.
 - **Small validated changes** beat big confident ones.
 
 ---
 
 ## Connect
 
-[LinkedIn](https://linkedin.com/in/jacobvontersch) · Always up for talking markets, models, or hockey.
+**Jake@professionalagmarketing.com**
+
+[LinkedIn](https://linkedin.com/in/jacobvontersch)
