@@ -1,6 +1,6 @@
 # Jacob VonTersch 🍊
 
-### I build data tools for commodity markets and predictive models for sports betting.
+### Commodity Market Data Tools | Sports Betting Models | Building the Tech Team at Pro Ag
 
 Luverne, Minnesota -> Syracuse -> Professional Ag Marketing.
 
