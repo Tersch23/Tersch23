@@ -1,6 +1,6 @@
 # Jacob VonTersch 🍊
 
-### Applied Data Analytics @ Syracuse | ACHA D1 Hockey | Sports Analytics & Betting Models
+### I build data tools for commodity markets and predictive models for sports betting.
 
 Luverne, Minnesota -> Syracuse -> Professional Ag Marketing.
 
