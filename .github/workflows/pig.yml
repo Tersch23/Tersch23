@@ -8,6 +8,10 @@ on:
     branches: [main]
     paths: [".github/scripts/field.py", ".github/workflows/pig.yml"]
 
+concurrency:
+  group: pig
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
