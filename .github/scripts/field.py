@@ -10,9 +10,9 @@ LEVEL = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE":
 weeks = cal["weeks"]
 NC = len(weeks)
 
-CELL, GAP, OX, OY = 12, 3, 24, 44
+CELL, GAP, OX, OY = 12, 3, 24, 22
 STEP = CELL + GAP
-W, H = OX * 2 + NC * STEP - GAP, OY + 7 * STEP + 24
+W, H = OX * 2 + NC * STEP - GAP, OY + 7 * STEP + 8
 if light:
     BG, DIRT, INK = "#F3F5FB", "#E1E6F5", "#4A5580"
     CROP = {1: "#BFE6CF", 2: "#7FCFA0", 3: "#2FA86A", 4: "#E8A317"}
@@ -21,7 +21,7 @@ else:
     BG, DIRT, INK = "#0A1033", "#141C4A", "#8D98BF"
     CROP = {1: "#1F5C3F", 2: "#2E8B57", 3: "#4FD18B", 4: "#FFC857"}
     STUBBLE = "#3B3524"
-T_MOVE, T = 16.0, 20.0
+T_MOVE, T = 40.0, 46.0
 dt = T_MOVE / (7 * NC)
 
 COMBINE = ["....OO......", "...OWWO.....", "..OOOOOO..Y.", ".OOOOOOOOYYY",
@@ -86,7 +86,6 @@ text{{font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;font-size
 @media (prefers-reduced-motion:reduce){{rect,.bot{{animation:none!important}}}}
 </style>
 <rect width="{W}" height="{H}" rx="10" fill="{BG}"/>
-<text x="{OX}" y="26" fill="{INK}"><tspan fill="#4FD18B">$</tspan> {label}</text>
 {"".join(rects)}
 <g class="bot">{"".join(px)}</g>
 </svg>'''
