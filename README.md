@@ -8,7 +8,7 @@
   <img src="https://raw.githubusercontent.com/Tersch23/Tersch23/output/pig-light.svg" alt="A pixel pig eating its way across my contribution graph" width="100%">
 </picture>
 
-I lead the technology team at [Professional Ag Marketing](https://www.professionalagmarketing.com), where we build production AI agents, data platforms and full-stack apps for hog, cattle and grain producers. Agriculture runs on decisions made with real money and messy data, and very few people are pointing modern tooling at it. That's the fun part.
+Working with the technology team at [Professional Ag Marketing](https://www.professionalagmarketing.com), where we build production AI agents, data platforms and full-stack apps for hog, cattle and grain producers. Agriculture runs on decisions made with real money and messy data, and very few people are pointing modern tooling at it.
 
 ### Now
 
