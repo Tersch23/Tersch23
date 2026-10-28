@@ -1,0 +1,52 @@
+name: pig eats the graph
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/scripts/field.py", ".github/workflows/pig.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch contribution calendar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api graphql -f login="${{ github.repository_owner }}" -f query='
+            query($login: String!) {
+              user(login: $login) {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                    weeks { contributionDays { weekday contributionLevel } }
+                  }
+                }
+              }
+            }' > contrib.json
+
+      - name: Render SVGs
+        run: |
+          mkdir -p dist
+          python3 .github/scripts/field.py contrib.json pig dist/pig-dark.svg
+          python3 .github/scripts/field.py contrib.json pig dist/pig-light.svg light
+
+      - name: Publish to output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin output || true
+          git checkout --orphan out-tmp
+          git rm -rf --quiet . || true
+          cp dist/*.svg .
+          git add pig-dark.svg pig-light.svg
+          git commit -m "Update pig graph"
+          git push --force origin out-tmp:output
