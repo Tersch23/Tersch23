@@ -1,75 +1,78 @@
-# Jacob VonTersch 🍊
+<img src="assets/banner.png" alt="jake@proag:~$ ship --ai-agents --data-platforms" width="100%">
 
-### Commodity Market Data Tools | Sports Betting Models | Syracuse Hockey Alum 🍊
+<p align="center">
+  <a href="https://github.com/Tersch23">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=900&color=F76900&center=true&vCenter=true&width=640&lines=jake%40proag%3A~%24+whoami;tech+lead+%40+professional+ag+marketing;fluent+in+python%2C+sql+and+pig+latin;shipping+ai+agents+to+prod;farm+kid.+hockey+guy.+data+nerd." alt="Typing terminal: whoami, tech lead at Professional Ag Marketing, fluent in Python, SQL and Pig Latin">
+  </a>
+</p>
 
-Luverne, Minnesota -> Syracuse -> Professional Ag Marketing.
+<p align="center">
+  <a href="https://www.linkedin.com/in/jacobvontersch"><img src="https://img.shields.io/badge/LinkedIn-000E54?style=for-the-badge&logo=linkedin&logoColor=F76900" alt="LinkedIn"></a>
+  <a href="https://tersch23.github.io/NFL-Leverage-Report/"><img src="https://img.shields.io/badge/Live_NFL_EPA_Report-000E54?style=for-the-badge&logo=githubpages&logoColor=F76900" alt="Live NFL EPA report"></a>
+  <img src="https://img.shields.io/badge/Sioux_Falls,_SD-000E54?style=for-the-badge&logo=googlemaps&logoColor=F76900" alt="Sioux Falls, SD">
+</p>
 
-Applied Data Analytics/Data Science @ the Syracuse iSchool, retired Syracuse Men's Ice Hockey player, and I love taking whatever I'm obsessed with and turning it into a system that actually runs.
+```python
+class Jake(Engineer):
+    role       = "Tech Lead @ Professional Ag Marketing"
+    builds     = ["AI agents", "data platforms", "full-stack apps"]
+    for_who    = "hog, cattle and grain producers"
+    pairs_with = ["Claude Code", "OpenAI Codex", "Grok"]
+    speaks     = ["Python", "SQL", "TypeScript", "JavaScript", "R", "Pig Latin"]
+    alma_mater = "Syracuse University, B.S. Applied Data Science '26"
+    previously = "ACHA D1 hockey, Syracuse"
 
-Now building technology for commodity markets at Professional Ag Marketing, and models for sports betting on my own time.
+    def philosophy(self):
+        return "Agents write the code. Guardrails make it trustworthy."
+```
 
----
+## Toolbox
 
-## MLB Home Run Model 🔒
+<p>
+  <img src="https://img.shields.io/badge/Claude_Code-000E54?style=for-the-badge&logo=claude&logoColor=F76900" alt="Claude Code">
+  <img src="https://img.shields.io/badge/OpenAI_Codex-000E54?style=for-the-badge" alt="OpenAI Codex">
+  <img src="https://img.shields.io/badge/Grok-000E54?style=for-the-badge&logo=x&logoColor=F76900" alt="Grok">
+  <img src="https://img.shields.io/badge/Agentic_Workflows-000E54?style=for-the-badge" alt="Agentic workflows">
+</p>
 
-A production home run prediction system for betting markets. It runs daily and grades every prediction against ground truth the next morning. Private repo, but the numbers are fair game.
+<p>
+  <img src="https://skillicons.dev/icons?i=py,ts,js,r,nextjs,react,fastapi,azure,postgres,git,github,githubactions&theme=dark" alt="Python, TypeScript, JavaScript, R, Next.js, React, FastAPI, Azure, PostgreSQL, Git, GitHub, GitHub Actions">
+</p>
 
-| | |
-|---|---|
-| **Architecture** | XGBoost + regularized logistic blend, Platt-calibrated per side |
-| **Features** | 134 engineered, from Statcast 2023-2026 plus weather, ballpark, and market data |
-| **Discrimination** | AUC **0.616**, Brier **0.101**, logLoss **0.352** |
-| **Top-tier lift** | **27.1%** hit rate against base rate, a **2.13x lift** |
-| **Second tier** | **20.4%** hit rate, **1.61x lift** |
-| **Validation** | 124-day forward holdout, **26,270** predictions, no lookahead |
-| **Track record** | **1,400+** scored predictions in a version-stamped ledger |
-| **Delivery** | 13-page research terminal. FastAPI + Next.js, Cloudflare R2 sync, always on. |
+<p>
+  <img src="https://img.shields.io/badge/SQL-000E54?style=for-the-badge" alt="SQL">
+  <img src="https://img.shields.io/badge/Azure_SQL-000E54?style=for-the-badge" alt="Azure SQL">
+  <img src="https://img.shields.io/badge/DuckDB-000E54?style=for-the-badge&logo=duckdb&logoColor=FFC857" alt="DuckDB">
+  <img src="https://img.shields.io/badge/Streamlit-000E54?style=for-the-badge&logo=streamlit&logoColor=F76900" alt="Streamlit">
+  <img src="https://img.shields.io/badge/CI%2FCD-000E54?style=for-the-badge&logo=githubactions&logoColor=4FD18B" alt="CI/CD">
+</p>
 
-**What I'm proudest of is the reporting layer, not the lift.** Every number in the terminal carries the model version that produced it. Stale metrics render an empty state instead of a chart. A headline ROI figure got demoted once I traced it and found only 7 of its 102 picks came from the current model. If I'm putting money behind a number, I need to know exactly where it came from.
+## Side quests
 
-**Where it's going.** It started as one market and grew past it. Predictions run daily now. Next up is matchup-level analysis across full slates, a public transparency feed that posts the hit rate regardless of what it says, and a broader player-value model that goes beyond single-game outcomes.
+- **Sports models.** Predictive models and analysis for MLB, the NFL and NCAA hoops. The public ones are below.
+- **Money OS.** My personal finance operating system: a local command center, automated data ingest, and AI agents that research decisions and log why I made them.
+- **Personal OS.** The agent setup I'm building to run my own day-to-day.
 
----
+## Public work
 
-## Building a Team
-
-I'm building out the technology function at Professional Ag Marketing from scratch, from the job description through hiring and the engineering standards we work to.
-
-Looking for builders who want real problems. The users are operators making decisions with their own money, so the work has consequences and there is no partial credit for a system that is almost right. Agriculture has plenty of those problems and very few people pointing modern tooling at them.
-
----
-
-## Public Work
-
-| Project | What it does | Tech |
+| Project | What it does | Built with |
 |---|---|---|
-| [Ag Market Predictor](https://github.com/Tersch23/ag-market-predictor) | Cross-market commodity forecasting with an XGBoost engine and offline local-LLM market briefings | Python, XGBoost, Streamlit, Llama.cpp |
-| [MLB WAR-162 Forecast](https://github.com/Tersch23/mlb-war162-forecast) | Next-season WAR/162 from prior-season data, leakage-controlled Random Forest at scale | PySpark, MLlib |
-| [NFL Leverage Report](https://github.com/Tersch23/NFL-Leverage-Report) | Roster-value opportunities from situational EPA against league average | Python, nflverse, Matplotlib |
-| [2025 Playoffs Statcast](https://github.com/Tersch23/mlb-2025-playoffs-statcast) | What separates elite postseason hitters, by quality of contact | R, ggplot2 |
-| [NCAA Hoops Dashboard](https://github.com/Tersch23/NCAA-Basketball-Dashboard) | Shot charts, team comparisons, conference standings across the Big 4 | Python, Streamlit, Plotly |
-| [Orange Hoops Challenge](https://github.com/Tersch23/Orange_Hoops_Challenge) | Clutch-shot success model, 85% accuracy across 211K shots | Python, scikit-learn, R |
+| [NFL Leverage Report](https://github.com/Tersch23/NFL-Leverage-Report) | Ranks a team's biggest improvement opportunities by situational EPA. [Live report](https://tersch23.github.io/NFL-Leverage-Report/) | Python, nflverse, Matplotlib |
+| [MLB WAR-162 Forecast](https://github.com/Tersch23/mlb-war162-forecast) | Next-season player value from prior-season data, with leakage controls | PySpark, MLlib |
+| [NCAA Hoops Dashboard](https://github.com/Tersch23/NCAA-Basketball-Dashboard) | Shot charts, team comparisons and standings across four conferences | Python, Streamlit, Plotly |
+| [Orange Hoops Challenge](https://github.com/Tersch23/Orange_Hoops_Challenge) | Who should take the last shot? A clutch-shot model | Python, scikit-learn, R |
+| [2025 Playoffs Statcast](https://github.com/Tersch23/mlb-2025-playoffs-statcast) | What separates elite postseason hitters | R, ggplot2 |
+| [Ag Market Predictor](https://github.com/Tersch23/ag-market-predictor) | Commodity price-direction model with offline local-LLM briefings | Python, XGBoost, llama.cpp |
 
-Most of my current work is private. This is the part I can show.
+Most of what I build day to day is private. This is the part I can show.
 
----
+## Activity
 
-## Stack
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tersch23/Tersch23/output/snake.svg" alt="A snake eating my contribution graph">
+</p>
 
-**Languages** Python · TypeScript · SQL · R · PySpark
-
-**Data** Postgres/Neon · Pandas · NumPy · Parquet · API and report ingestion pipelines
-
-**ML** scikit-learn · XGBoost · calibration and time-series CV · feature engineering · backtesting
-
-**Ship** Next.js · React · FastAPI · Streamlit · Plotly · Tailwind · Railway · Vercel · Cloudflare R2 · Git/GitHub
-
-**AI** Claude Code daily driver · agentic workflows · prompt engineering · local LLMs (Llama 3 via llama.cpp)
-
----
-
-## Connect
-
-**Jake@professionalagmarketing.com**
-
-[LinkedIn](https://linkedin.com/in/jacobvontersch)
+```text
+     ^..^      // senior engineer
+    ( oo )~    // reviews every PR, oinks at flaky tests
+```
